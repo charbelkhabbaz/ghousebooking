@@ -1,43 +1,78 @@
-Check these things before running the project
+🏨 Guesthouse Booking System
+A web-based platform I developed using PHP, HTML, CSS, AJAX, JavaScript, and SQL. This system allows users to browse and book guesthouses effortlessly while providing administrators with powerful tools to manage listings, reservations, and users.
 
-1. db_config.php in Admin Folder
-
-[.] Database file is present in the DATABASE folder, you just need to import it in phpmyadmin.
-[.] Check the database name, localhost, user name and password.
-
-
-
-2. essentials.php in Admin Folder
-
-[.] define('SITE_URL','http://127.0.0.1/hotelbooking/')
-  
-  -> change the above url accordingly, if your project folder name is changed from "hotelbooking" to something else.
-
-[.] define('UPLOAD_IMAGE_PATH',$_SERVER['DOCUMENT_ROOT'].'/hotelbooking/images/')
-
-  -> change the above url accordingly, if your folder name is changed from "hotelbooking" to something else.
-
-[.] define('SENDGRID_API_KEY',"PASTE YOUR API KEY GENERATED FROM SENDGRID WEBSITE")
-[.] define('SENDGRID_EMAIL',"PUT YOUR EMAIL")
-[.] define('SENDGRID_NAME',"ANY NAME")
- 
-  -> Create an account on sendgrid and generate the API key and just simply paste it in above lines
+✨ Features
+👤 User Features
+- Browse available guesthouses and book for specific dates.
+- Double authentication login for security.
+- Manage reservations and view booking history.
 
 
 
-3. hotelbooking/inc/paytm/config_paytm.php
+🛠️ Admin Features
 
-[.] Go to paytm business webiste and login with your account 
-    & on dashboard of paytm you will find "Developer settings" -> "api keys".
-    Get your api keys from there and change it in file "config_paytm.php"
+- Add, update, and delete guesthouse listings.
+- Approve or reject bookings in real-time.
+- Monitor occupancy and revenue reports through an intuitive dashboard.
 
-  define('PAYTM_ENVIRONMENT', 'TEST'); // PROD
-	define('PAYTM_MERCHANT_KEY', 'PASTE YOUR MERCHANT KEY'); //Change this constant's value with Merchant key received from Paytm.
-	define('PAYTM_MERCHANT_MID', 'PASTE YOUR MERCHANT MID'); //Change this constant's value with MID (Merchant ID) received from Paytm.
-	define('PAYTM_MERCHANT_WEBSITE', 'WEBSTAGING'); //Change this constant's value with Website name received from Paytm.
-	define('INDUSTRY_TYPE_ID', 'Retail'); // Change this constant with website industry type given by paytm
-	define('CHANNEL_ID', 'WEB'); // Change this constant with website channel id given by paytm
-	
-[.] Change the below constant with callback url accrodingly -> but dont change the file pay_resonse.php
+🧱 Technologies Used:
 
-	define('CALLBACK_URL', 'http://localhost/hotelbooking/pay_response.php'); 
+PHP | MySQL | HTML | CSS | JavaScript | AJAX
+
+🚫 The project was developed without any frameworks and runs locally using XAMPP, making it a lightweight yet robust solution for small to medium-sized guesthouse businesses.
+
+⚙️ Setup Instructions (Localhost with XAMPP)
+🔧 Before running the project, you need to configure a few files.
+
+1️⃣ db_config.php – Located in the /Admin folder
+✅ Import the .sql file inside the /DATABASE folder into phpMyAdmin.
+✅ Then update the following values in db_config.php:
+
+$db_host = 'localhost';
+$db_user = 'root';       // Change if your DB username is different
+$db_pass = '';           // Change if your DB has a password
+$db_name = 'your_db_name'; // Replace with the imported DB name
+
+2️⃣ essentials.php – Also in the /Admin folder
+Update the URLs to reflect your local folder name:
+
+define('SITE_URL','http://127.0.0.1/hotelbooking/'); 
+define('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT'].'/hotelbooking/images/');
+🔁 Replace "hotelbooking" with your actual folder name (e.g., guesthouse-booking) if it's different.
+
+3️⃣ sendgrid Configuration (Optional – for email verification)
+If you're using SendGrid for email verification, update these in essentials.php:
+
+define('SENDGRID_API_KEY',"YOUR_API_KEY_HERE");
+define('SENDGRID_EMAIL',"YOUR_EMAIL_HERE");
+define('SENDGRID_NAME',"ANY_NAME");
+
+You’ll need to:
+Sign up at SendGrid
+Create an API key
+Paste it here
+
+4️⃣ config_paytm.php – (Optional Payment Integration)
+If using Paytm for test/production payments:
+
+Update values like PAYTM_MERCHANT_KEY, MID, WEBSITE, and CALLBACK_URL accordingly.
+This is optional and only needed if you enable payment processing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
