@@ -42,9 +42,9 @@ $db_name = 'your_db_name'; // Replace with the imported DB name
 2️⃣ essentials.php – Also in the /Admin folder
 Update the URLs to reflect your local folder name:
 
-define('SITE_URL','http://127.0.0.1/hotelbooking/'); 
-define('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT'].'/hotelbooking/images/');
-🔁 Replace "hotelbooking" with your actual folder name (e.g., guesthouse-booking) if it's different.
+define('SITE_URL','http://127.0.0.1/ghousebooking/'); 
+define('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT'].'/ghousebooking/images/');
+🔁 Replace "ghousebooking" with your actual folder name (e.g., guesthouse-booking) if it's different.
 
 
 3️⃣ sendgrid Configuration (Optional – for email verification)
