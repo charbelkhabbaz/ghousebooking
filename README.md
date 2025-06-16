@@ -1,7 +1,8 @@
-🏨 Guesthouse Booking System
+# 🏨 Guesthouse Booking System
+
 A web-based platform I developed using PHP, HTML, CSS, AJAX, JavaScript, and SQL. This system allows users to browse and book guesthouses effortlessly while providing administrators with powerful tools to manage listings, reservations, and users.
 
-✨ Features
+**✨ Features**
 👤 User Features
 - Browse available guesthouses and book for specific dates.
 - Double authentication login for security.
@@ -10,17 +11,19 @@ A web-based platform I developed using PHP, HTML, CSS, AJAX, JavaScript, and SQL
 ![Capture1](https://github.com/user-attachments/assets/f2568c3f-90e7-409d-a9ea-db829e2c2fb1)
 
 ![Capture2](https://github.com/user-attachments/assets/9ff37194-64d7-4f65-bd43-c13e1e30cd92)
-🛠️ Admin Features
+
+**🛠️ Admin Features**
 
 - Add, update, and delete guesthouse listings.
 - Approve or reject bookings in real-time.
 - Monitor occupancy and revenue reports through an intuitive dashboard.
 
  ![Capture3](https://github.com/user-attachments/assets/5ef149e4-7a2c-4b67-8896-bae9e17e4bdc)
+ 
  ![Capture4](https://github.com/user-attachments/assets/8f00c383-4cc8-4666-af0e-3c4e7446b85d)
  
 
-🧱 Technologies Used:
+**🧱 Technologies Used:**
 
 PHP | MySQL | HTML | CSS | JavaScript | AJAX
 
